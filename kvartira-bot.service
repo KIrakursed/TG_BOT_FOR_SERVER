@@ -1,0 +1,36 @@
+[Unit]
+Description=Kvartira Telegram Bot
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/telegram_bot_krisha.kz
+EnvironmentFile=/home/ubuntu/telegram_bot_krisha.kz/.env
+ExecStart=/home/ubuntu/telegram_bot_krisha.kz/.venv/bin/python -m app.main
+Restart=on-failure
+RestartSec=5
+# Shutdown must not hang forever on a cancelled search (systemd would SIGKILL mid-transaction).
+TimeoutStopSec=30
+
+# Sandboxing: the bot only needs its own directory and the network. If the process is ever
+# compromised it should not see the rest of the home directory, /etc or the backups.
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/ubuntu/telegram_bot_krisha.kz
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+SystemCallFilter=@system-service
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=multi-user.target

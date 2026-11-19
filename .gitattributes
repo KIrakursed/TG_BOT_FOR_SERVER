@@ -1,0 +1,6 @@
+# Shell scripts must stay LF: systemd/bash on the server choke on CRLF.
+*.sh text eol=lf
+deploy/* text eol=lf
+*.py text eol=lf
+*.timer text eol=lf
+*.service text eol=lf

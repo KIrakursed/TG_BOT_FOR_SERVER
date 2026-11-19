@@ -1,0 +1,10 @@
+# Development and CI dependencies. The deploy gate runs pytest + ruff on the server,
+# so these are installed there too (see deploy.sh).
+-r requirements.txt
+
+pytest==8.4.2
+pytest-asyncio==0.26.0
+aiosqlite==0.22.1
+ruff==0.16.10
+mypy==2.4.0
+pip-audit==2.10.1

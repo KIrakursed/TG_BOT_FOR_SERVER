@@ -1,0 +1,11 @@
+2026-09-29 04:06:45,283 INFO aiogram.dispatcher Start polling
+2026-09-29 04:06:49,362 INFO aiogram.dispatcher Run polling for bot @kvartira10_bot id=8950743117 - 'Kv_bot'
+2026-09-29 04:07:38,433 INFO aiogram.event Update id=507359415 is handled. Duration 438 ms by bot id=8950743117
+2026-09-29 04:07:44,025 INFO aiogram.event Update id=507359416 is handled. Duration 264 ms by bot id=8950743117
+2026-09-29 04:07:45,639 INFO aiogram.event Update id=507359417 is handled. Duration 328 ms by bot id=8950743117
+2026-09-29 04:07:47,204 INFO aiogram.event Update id=507359418 is handled. Duration 297 ms by bot id=8950743117
+2026-09-29 04:07:48,511 INFO aiogram.event Update id=507359419 is handled. Duration 328 ms by bot id=8950743117
+2026-09-29 04:07:50,305 INFO aiogram.event Update id=507359420 is handled. Duration 406 ms by bot id=8950743117
+2026-09-29 04:07:54,724 INFO aiogram.event Update id=507359421 is handled. Duration 328 ms by bot id=8950743117
+2026-09-29 04:07:55,541 INFO aiogram.event Update id=507359422 is handled. Duration 452 ms by bot id=8950743117
+2026-09-29 04:07:56,593 INFO aiogram.event Update id=507359423 is handled. Duration 484 ms by bot id=8950743117
